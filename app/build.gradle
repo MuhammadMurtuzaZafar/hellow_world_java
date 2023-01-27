@@ -5,6 +5,7 @@ plugins {
 android {
     namespace 'com.example.hello_world'
     compileSdk 33
+    buildToolsVersion "33.0.0"
 
     defaultConfig {
         applicationId "com.example.hello_world"
