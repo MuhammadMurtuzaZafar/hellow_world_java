@@ -23,6 +23,7 @@ jobs:
     needs: [lint]
     runs-on: ubuntu-latest
     steps:
+      
       - name: Checkout the code
         uses: actions/checkout@v2
 
@@ -47,6 +48,8 @@ jobs:
         with:
           api-level: 29
           script: ./gradlew connectedCheck
+            - chmod +x ./gradlew build connectedCheck
+
 
       - name: Upload test report
         uses: actions/upload-artifact@v2
