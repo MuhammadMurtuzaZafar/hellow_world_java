@@ -15,23 +15,3 @@ dependencyResolutionManagement {
 }
 rootProject.name = "hello_world"
 include ':app'
-buildscript {
-    ext.kotlin_version = '1.6.10'
-//    ext.kotlin_version = '1.3.50'
-    repositories {
-        google()
-        jcenter()
-    }
-
-    dependencies {
-        classpath 'com.android.tools.build:gradle:7.0.4'
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-    }
-}
-
-allprojects {
-    repositories {
-        google()
-        jcenter()
-    }
-}
