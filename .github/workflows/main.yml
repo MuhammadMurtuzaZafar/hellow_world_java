@@ -47,6 +47,8 @@ jobs:
         with:
           api-level: 29
           script: ./gradlew connectedCheck
+           - chmod +x ./gradlew build connectedCheck
+
 
       - name: Upload test report
         uses: actions/upload-artifact@v2
@@ -65,8 +67,6 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 11
-
-    
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
