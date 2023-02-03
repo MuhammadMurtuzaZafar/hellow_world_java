@@ -14,6 +14,15 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: set up JDK 11
+    - name: Download a Build Artifact
+  uses: actions/download-artifact@v3.0.2
+  with:
+    # Artifact name
+    name: # optional
+    # Destination path
+    path: # optional
+    
+    
       uses: actions/setup-java@v3
       with:
         java-version: '11'
